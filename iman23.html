@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nav bar</title>
+</head>
+<style>
+    .nav{
+        background-color: black;
+        border-radius: 30px;
+        overflow: auto;
+    }
+    /* .nav ul{
+            overflow: auto;} */
+    .nav li{
+        float: left;
+        margin: 15px 25px;
+    }
+    .nav li a{
+        padding: 3px 10px;
+        text-decoration: none;
+        color: blue;
+        font-family: cursive;
+        font-size: 18px;
+        
+    }
+    .nav li a:hover{
+        color: brown;
+    }
+    #search{
+        float: right;
+        padding: 20px 10px;
+        border-radius: 30px;
+    }
+</style>
+<body>
+<header>
+    <nav class="nav" type="none">
+        
+            <li><a href="#">DASHBOARD</a>
+                <a href="#">SHORTCUTS</a>
+                <a href="#">OVERVIEW</a>
+                <a href="#">EVENTS</a>
+                <a href="#">ABOUT</a>
+                <a href="#">SERVICE</a>
+                <a href="#">CONTACT</a>
+            </li>
+            <div class="search">
+                <input type="text" id="search" placeholder="search here">
+            </div>
+ 
+    </nav>
+</header>
+</body>
+</html>

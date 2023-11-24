@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gym website</title>
+</head>
+<style>
+    body{
+        margin: 0;
+        padding: 0;
+        font-family: 'Courier New', Courier, monospace;
+        background-image: url(https://m.media-amazon.com/images/I/715VS+b8fXL._AC_UF1000,1000_QL80_.jpg);
+        background-size: cover;
+        /* background-color: black; */
+    }
+    .left{
+        position: absolute;
+        left: 50px;
+        top: 30px;
+        display: inline-block;
+
+    }
+    .left img{
+        width: 90px;
+        height: 50px;
+        
+        /* filter: invert(100%); */
+    }
+    .left div{
+        line-height: 5px;
+        font-weight: bold;
+        text-align: center;
+        color: green;
+
+    }
+    .mid{
+        display: flex;
+        width: 90px; 
+        margin: 15px auto;
+
+    }
+    .right{
+        display: inline-block;
+        position: absolute;
+        right: 30px;
+        top: 20px;
+    }
+    .navbar{
+        display: flex;
+    }
+    .navbar a{
+        display: inline-block;
+        text-decoration: none;
+        padding: auto;
+        margin-left: 10px;
+        color: rgb(17, 0, 255);
+        font-size: larger;
+        font-weight: bold;
+        }
+        .navbar a:hover{
+            color: rgb(226, 43, 159);
+        }
+        .right button{
+            width: 75px;
+            height: 20px;
+        }
+        .right button:hover{
+            color: aqua;
+        }
+        .right button a:hover{
+            color: rgb(255, 0, 0);
+        }
+        .container{
+            border: 2px solid black;
+            padding: 5px;
+            margin: auto;
+            text-align: center;
+           /* background-image: url(https://1000logos.net/wp-content/uploads/2023/04/Starbucks-logo.png); */
+            border-radius: 35px;
+            /* padding-bottom: 20px; */
+            width: 430px;
+            height: 400px;
+
+        }
+    .container input{
+        width: 260px;
+        border-radius: 10px;
+        height: 20px;
+        border: 2px solid black;
+    }
+    .container button{
+        margin-right: 200px;
+        border-radius: 5px;
+        color:black;
+    }
+    .container button:hover{
+        color:brown;
+    }
+
+
+
+
+</style>
+<body>
+    <header class="header">
+        <div class="left">
+            <img src="https://1000logos.net/wp-content/uploads/2023/04/Starbucks-logo.png" alt="logo" >
+            <div>Slim Life</div>
+
+        </div>
+        <div class="mid">
+            <ul class="navbar">
+                <a href="#">HOME</a>
+                <a href="#">COURSES</a>
+                <a href="#">ABOUT</a>
+                <a href="#">CONTACT</a>
+
+            </ul>
+            <div class="right">
+                <button class="btn"><a href="tel:+917477891448">call us</a></button>
+                <button class="btn"><a href="mailto:imankalyan13919@gmail.com">email us</a></button>
+            
+            </div>
+        </div>
+    </header><br><br><br><br><br>
+    <marquee direction="left" style="color: rgb(255, 0, 0); font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">WANT TO LOOK HOT? LOOSE UP TO 10KGS IN 7DAYS </marquee>
+    <div class="container">
+        <h1>START RISK FREE TRIAL...</h1>
+        <h3></h3>
+        <form>
+            <div class="form">
+                <input type="text" placeholder="enter your name" required><br><br>
+                 </div>
+                 <div class="form">
+                    <input type="number" placeholder="enter your age" required><br><br>
+                     </div>
+                     <div class="form">
+                        <input type="number" placeholder="enter your mobile number" required><br><br>
+                         </div>
+                         <div class="form">
+                            <input type="text" placeholder="enter your email" required><br><br>
+                             </div>
+                             
+            <button>submit</button>
+        </form>
+    </div>
+</body>
+</html>

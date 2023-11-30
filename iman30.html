@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>servey form</title>
+</head>
+<style>
+    body{
+        
+        font-family: Arial,sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        
+        
+       }
+       form{
+        background-image: url();
+        background-size: cover;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+        border-radius: 10px;
+        padding-right: 10px;
+       }
+    .head{
+        display: flex;
+        text-align: center;
+        
+    }
+    input, select{
+            /* width: 100%;
+            padding: 8px;
+            margin-bottom: 15px; */
+            box-sizing: border-box;
+            border-radius: 5px;
+            border: 1px solid black;}
+    .head img{
+        height: 50px;
+        width: 50px;
+        /* border-radius: 25px ; */
+        display: flex;
+        padding-left: 30px;
+        padding-top: 20px;
+    }
+    .head h2{
+        
+        text-align: center;
+        text-decoration: underline;
+        display: flex;
+        margin: 30px auto;
+        
+    }
+    .mid{
+        border: 5ps solid black;
+        position: relative;
+        padding-left: 30px;
+    }
+    .last{
+        padding-left: 30px;
+    }
+    .last button{
+        background-color: rgb(213, 213, 210);
+            color: #050505;
+            padding: 5px 5px;
+            width: 10%;
+            cursor: pointer;
+            border-radius: 4px; 
+          float: inline-end;
+          margin: 0px 10px 10px 0px;
+        
+        
+    }
+    .last button:hover{
+        color: rgb(255, 0, 0);
+        background-color: cyan;
+    }
+</style>
+<body>
+   <form>
+    <div class="head">
+        <img src="data:image/jpeg;base64,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" alt="pic">
+        <h2>BLOOD DONATION CAMP</h2>
+    </div>
+    <Div class="mid">
+        First name: <input type="" placeholder="enter your first name"> ;  
+        Last name: <input type="" placeholder="enter your last name"> ;<br><br>  
+        Gender: <input type="radio">male
+        <input type="radio">female
+        <input type="radio">others  ;
+        Age: <input type="number" placeholder="enter your age"><br><br>
+        Occupation: <input type="" placeholder="enter your occupation">  ;
+        Gurdian's name: <input type="" placeholder="enter your gurdian's name"><br><br>
+        Permanent address: <TExtarea placeholder="enter your address"></TExtarea> ;
+        Blood group:<select>
+            <option value="#">chose one</option>
+            <option value="A+">A+</option>
+            <option value="A-">A-</option>
+            <option value="B+">B+</option>
+            <option value="B-">B-</option>
+            <option value="O+">O+</option>
+            <option value="O-">O-</option>
+            <option value="AB+">AB+</option>
+            <option value="AB-">AB-</option></select><br><br>
+        Mobile number: <input type="text" placeholder="enter your ph number">  ;
+        Email: <input type="text" placeholder="enter your email"><br><br>
+        Number your previous donations: <input type="number" >  ;
+        When last: <input type="date" placeholder="enter your previous donation date">
+    </Div><br>
+    <div class="last">
+        <h3>Please ans the following question correctly......</h3>
+        1.Do you feel well today? <input type="radio">yes
+        <input type="radio">no <br><br>
+        2.Do you have something to eat in the last 4 hour? <input type="radio">yes
+        <input type="radio">no <br><br>
+        3.Are you suffering from common cold?  <input type="radio">yes
+        <input type="radio">no <br><br>
+        4.Have you taken alchohol in the past 24 hours?  <input type="radio">yes
+        <input type="radio">no <br><br>
+        5.have you taking any of these in past 74 hours? <input type="radio">Steroids
+        <input type="radio">Aspirin <input type="radio">Other Medicine  <input type="" placeholder="please specify">  <br><br>
+        6.In the last 4 months have you had any disease?  <input type="" placeholder="please specify"><br>
+        <button>Submit</button> 
+    </div>
+   </form>
+</body>
+</html>
